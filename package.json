@@ -5,7 +5,8 @@
   "main": "./src/server.ts",
   "scripts": {
     "start": "tsc && node dist/server.js",
-    "start:dev":"tsc && concurrently \"tsc -w\" \"nodemon dist/server.js\""
+    "start:dev":"tsc && concurrently \"tsc -w\" \"nodemon dist/server.js\"",
+    "start:prod": "SER NODE_ENV=production && npm start"
   },
   "author": "Daniel Amaya Marin",
   "license": "ISC",
